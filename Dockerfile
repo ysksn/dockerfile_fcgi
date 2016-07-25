@@ -1,4 +1,5 @@
 FROM ubuntu:16.04
+MAINTAINER Yosuke Kabuto
 
 RUN mkdir /fcgi
 RUN apt-get update
