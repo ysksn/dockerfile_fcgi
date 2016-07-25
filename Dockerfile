@@ -8,7 +8,7 @@ RUN apt-get -y install \
   curl
 
 WORKDIR /fcgi
-RUN curl -O https://raw.githubusercontent.com/FastCGI-Archives/FastCGI.com/master/original_snapshot/fcgi-2.4.1-SNAP-0910052249.tar.gz
+RUN curl -O -k -L https://github.com/FastCGI-Archives/FastCGI.com/raw/master/original_snapshot/fcgi-2.4.1-SNAP-0910052249.tar.gz
 RUN tar xvfz fcgi-2.4.1-SNAP-0910052249.tar.gz
 
 WORKDIR /fcgi/fcgi-2.4.1-SNAP-0910052249
